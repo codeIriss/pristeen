@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from '../components/Reuseable/HeroSection'
 
+import InfoBlock from '../components/Reuseable/InfoBlock'
+
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -15,6 +17,7 @@ const IndexPage = ({data}) => (
      title="Pristeen"
      subtitle="Your Clothes tell a story like you do !"
      heroclass="hero-background"/>
+     <InfoBlock heading="About Us" />
   </Layout>
 )
 export const query = graphql`

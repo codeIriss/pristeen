@@ -19,3 +19,6 @@ html {
   flex-direction: column;
 
 }
+.btn-warning {
+  padding: 8px 35px;
+}
