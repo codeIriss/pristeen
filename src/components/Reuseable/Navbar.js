@@ -8,7 +8,7 @@ export default class Navbar extends Component {
      state={
          navbarState:false,
          navbarClass:"collapse navbar-collapse ",
-         menus: [{id:1,text:"Home",url:'/',},{id:2,text:"About",url:'/',},{id:3,text:"Services",url:'/',},{id:4,text:"Contact",url:'/',}]
+         menus: [{id:1,text:"Home",url:'/',},{id:2,text:"About",url:'/About',},{id:3,text:"Services",url:'/',},{id:4,text:"Contact",url:'/',}]
      }
      myToggler = () =>{
          this.state.navbarState ? this.setState({

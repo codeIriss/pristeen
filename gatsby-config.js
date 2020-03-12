@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path:`.env.development`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `LearnCodeOnline Youtube project`,
@@ -25,6 +29,15 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
        
+      },
+      
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'qgkwgrbn4rdb',
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: '6xlAwFCzLAGJL31mONxVClJtMKCOZUNY0BLNLvyeKAQ',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
