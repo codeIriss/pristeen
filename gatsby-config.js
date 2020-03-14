@@ -1,5 +1,5 @@
 require('dotenv').config({
-  path:`.env.development`,
+  path:`.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -35,15 +35,15 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'qgkwgrbn4rdb',
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: '6xlAwFCzLAGJL31mONxVClJtMKCOZUNY0BLNLvyeKAQ',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
 			resolve: "gatsby-plugin-snipcart",
 			options: {
-        apiKey: 'OTI5M2E5OGItMGViNy00YzljLWI1NTUtZGY5MTk5ODAxNzc2NjM3MTk2MTM1NTM3NTE2MTc4',
+        apiKey: process.env.SNIPCART_KEY,
         autopop: true,
 			},
 		},
