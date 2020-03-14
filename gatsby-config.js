@@ -40,6 +40,13 @@ module.exports = {
         accessToken: '6xlAwFCzLAGJL31mONxVClJtMKCOZUNY0BLNLvyeKAQ',
       },
     },
+    {
+			resolve: "gatsby-plugin-snipcart",
+			options: {
+        apiKey: 'OTI5M2E5OGItMGViNy00YzljLWI1NTUtZGY5MTk5ODAxNzc2NjM3MTk2MTM1NTM3NTE2MTc4',
+        autopop: true,
+			},
+		},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
