@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `LearnCodeOnline Youtube project`,
-    description: `amazing awesome youtube people`,
+    title: `Pristeen`,
+    description: `Your clothes tell a story like you do!`,
     author: `@gatsbyjs`,
   },
   plugins: [
